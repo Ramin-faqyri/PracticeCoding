@@ -67,7 +67,7 @@ header {
   white-space: nowrap;
 }
 
-.card__counter {
+.card__number {
   color: white;
   font-size: 0.8rem;
   font-weight: 500;
@@ -109,7 +109,6 @@ header {
   align-items: center;
   background-color: var(--secondary);
   color: white;
-  align-self: center;
   border: none;
   cursor: pointer;
   margin-inline-end: 5px;
