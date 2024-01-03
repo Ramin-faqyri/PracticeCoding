@@ -1,8 +1,10 @@
+/* GLOBAL RULES */
+
 :root {
-  --primary: black;
-  --secondary: darkgreen;
-  --box-element: pink;
-  --box-element-two: hotpink;
+  --primary: #000000;
+  --secondary: #006400;
+  --box-element: #ffc0cb;
+  --box-element-two: #ff69b4;
 }
 
 body {
@@ -25,56 +27,116 @@ h1 {
 header {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-block-start: 50px;
-}
-
-footer {
-  margin-block-end: 30px;
-}
-
-.image__bird {
-  border-radius: 50%;
-  width: 150px;
-}
-
-.bird__name {
-  color: var(--secondary);
-  font-size: 1.5rem;
+  width: 100%;
+  background-color: var(--secondary);
+  padding: 20px;
+  color: white;
+  font-size: 2rem;
   font-weight: 800;
-  margin: 20px;
 }
 
-.profile__box {
+.content__container {
   display: flex;
   justify-content: center;
   flex-direction: column;
   background-color: var(--box-element);
-  border-radius: 10px;
+  border-radius: 1rem;
+  border-top-left-radius: 5.4rem;
   padding: 20px;
-  max-width: 500px;
-  margin: 15px auto;
+  min-width: 350px;
+  max-width: 450px;
+  margin: 30px auto;
 }
 
+/* SECTION: PROFILE HEADER */
+
+.profile__header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* margin-block-start: 0.1rem; */
+}
+
+.image__bird {
+  border-radius: 50%;
+  filter: drop-shadow(-0.5rem 0.4rem 10px grey);
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+}
+
+.name__box {
+  color: var(--secondary);
+  margin-inline-start: 30px;
+  white-space: nowrap;
+}
+
+.bird__name {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.bird__species {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* SECTION: PROFILE CONTENT */
+
 .profile__text {
-  background-color: none;
+  background-color: white;
+  border-radius: 10px;
+  margin-block: 40px 10px;
+  padding: 30px;
+}
+
+/* PROFILE: BUTTONS */
+
+.profile__buttons {
+  display: flex;
+  flex-direction: row;
 }
 
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--secondary);
   color: white;
   align-self: center;
   border: none;
   cursor: pointer;
-  margin: 20px 10px;
+  margin-inline-end: 5px;
   padding: 10px;
-  width: 150px;
   border-radius: 10px;
+  height: 30px;
+}
+
+.button__specs {
+  width: 80%;
+}
+
+.button__bookmark {
+  width: 10%;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--primary);
+  background-color: var(--box-element-two);
+  border-radius: 10px;
+  padding-inline: 5px;
+  width: 10%;
 }
 
 .button__active {
   background-color: var(--primary);
 }
+
+/* SPEC BOX  */
 
 .box__specs {
   display: flex;
@@ -86,18 +148,4 @@ footer {
 .specs__bird {
   list-style-type: none;
   margin: 5px;
-}
-
-.mail__link {
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  color: var(--primary);
-  background-color: var(--box-element-two);
-  font-size: 1.2rem;
-  font-weight: 500;
-  padding: 10px;
-  border-radius: 10px;
-  max-width: 500px;
-  margin: 0px auto;
 }
