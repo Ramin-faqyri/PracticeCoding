@@ -8,35 +8,61 @@
     <title>PracticeCoding</title>
   </head>
   <body>
-    <header>
-      <img
-        src="assets/vulture_1.png"
-        class="image image__bird"
-        data-js="image-bird"
-      />
-      <h1 class="bird__name">Bearded Vulture</h1>
-    </header>
-    <main class="profile__box">
-      <p class="profile__text">
-        This is an AI generated picture of a bearded vulture. As one can see,
-        the beard is missing and it has an undefined number of legs. Not an
-        accurate depiction, aye?
-      </p>
-      <button
-        type="button"
-        class="button button--active"
-        data-js="toggle-button"
-      >
-        Show specifics
-      </button>
-      <ul class="box__specs">
+    <header>BirdWatch</header>
+    <main class="content__container">
+      <section class="profile__header">
+        <img
+          src="assets/bearded_vulture_1.jpg"
+          class="image image__bird"
+          data-js="image-bird"
+        />
+        <div class="name__box">
+          <h1 class="bird__name">Bearded Vulture</h1>
+          <p class="bird__species">(Gypaetus barbatus)</p>
+        </div>
+      </section>
+      <section class="profile__content">
+        <p class="profile__text">
+          The bearded vulture, also known as the Lämmergeier and Ossifrage, is a
+          very large bird of prey in the monotypic genus Gypaetus.
+        </p>
+        <div class="profile__buttons">
+          <button
+            type="button"
+            class="button button__specs button--active"
+            data-js="toggle-button"
+          >
+            Bird Specs
+          </button>
+          <button
+            type="button"
+            class="button button__bookmark button--active"
+            data-js="toggle-button"
+            alt="plus sign"
+            aria-label="add bird to saved bird profiles"
+          >
+            <img
+              src="./assets/eye-closed__outline-white.svg"
+              alt="closed eye icon"
+            />
+          </button>
+          <a
+            href="mailto:?subject=A%20wild%20bird%20appeard!&amp;body=Check%20out%20this%20bird%20on%20birdwatch:%20https://birdwatch.app/bird-1"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            aria-label="send link via mail"
+            ><img src="./assets/send-mail.svg" alt="envelope icon"
+          /></a>
+        </div>
+      </section>
+      <!-- <ul class="box__specs">
         <li class="specs__bird">Spec #1</li>
         <li class="specs__bird">Spec #2</li>
         <li class="specs__bird">Spec #3</li>
-      </ul>
+      </ul> -->
+
+      <!-- <footer></footer> -->
     </main>
-    <footer>
-      <a href="mailto:mail@me" class="mail__link">Mail me!</a>
-    </footer>
   </body>
 </html>
