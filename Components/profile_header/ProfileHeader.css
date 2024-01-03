@@ -1,0 +1,55 @@
+.content__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--box-element);
+  border-radius: 1rem;
+  border-top-left-radius: 5.4rem;
+  padding: 20px;
+  min-width: 350px;
+  max-width: 450px;
+  margin: 30px auto;
+}
+
+/* SECTION: PROFILE HEADER */
+
+.profile__header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* margin-block-start: 0.1rem; */
+}
+
+.image__bird {
+  border-radius: 50%;
+  filter: drop-shadow(-0.5rem 0.4rem 10px var(--box-shadow));
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+}
+
+.name__box {
+  color: var(--secondary);
+  margin-inline-start: 30px;
+  white-space: nowrap;
+}
+
+.card__counter {
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 500;
+  background-color: #006400;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  width: 25%;
+}
+
+.bird__name {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.bird__species {
+  font-size: 1rem;
+  font-weight: 300;
+}

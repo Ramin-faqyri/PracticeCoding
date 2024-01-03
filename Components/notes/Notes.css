@@ -1,0 +1,13 @@
+/* SPEC BOX  */
+
+.box__specs {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+
+.specs__bird {
+  list-style-type: none;
+  margin: 5px;
+}

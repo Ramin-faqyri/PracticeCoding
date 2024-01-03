@@ -1,0 +1,7 @@
+@import "./global.css";
+@import "./Components/buttons/Buttons.css";
+@import "./Components/content/Content.css";
+@import "./Components/header/Header.css";
+@import "./Components/notes/Notes.css";
+@import "./Components/profile/Profile.css";
+@import "./Components/profile_header/ProfileHeader.css";
