@@ -1,0 +1,45 @@
+/* PROFILE: BUTTONS */
+
+.profile__buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary);
+  color: white;
+  align-self: center;
+  border: none;
+  cursor: pointer;
+  margin-inline-end: 5px;
+  padding: 10px;
+  border-radius: 0.3rem;
+  height: 30px;
+}
+
+.button__specs {
+  width: 80%;
+}
+
+.button__bookmark {
+  width: 10%;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--primary);
+  background-color: var(--box-element-two);
+  border-radius: 0.3rem;
+  padding-inline: 5px;
+  width: 10%;
+}
+
+.button__active {
+  background-color: var(--primary);
+}
